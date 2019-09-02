@@ -8,8 +8,12 @@ public class BackwardsString extends SpecialString {
 
 	@Override
 	public String funkifyText(String s) {
-		
-		return "";
+		char[] arr = s.toCharArray();
+		String back = "";
+		for(int i = arr.length-1; i >= 0; i--) {
+			back += arr[i];
+		}
+		return back;
 	}
 
 }
